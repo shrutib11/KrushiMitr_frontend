@@ -1,5 +1,5 @@
 {
-  "proxy" : "https://krushi-mitr-backend1.vercel.app",
+  "proxy" : "https://krushi-mitr-backend1.vercel.app/api",
   "name": "farmer-connect",
   "version": "0.1.0",
   "private": true,
