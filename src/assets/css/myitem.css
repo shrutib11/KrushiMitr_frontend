@@ -1,0 +1,75 @@
+.mainContainer {
+    width: 100%;
+    margin-top: 25px;
+    background-color: white;
+    margin-left: 155px;
+}
+
+.heading {
+    color: grey;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+/* Add custom CSS styles for adjusting column sizes */
+.results th.col-md-4,
+.results td.col-md-4 {
+    width: 30%; /* Adjust the width of the disease column */
+}
+
+.results th.col-md-3,
+.results td.col-md-3 {
+    width: 15%; /* Adjust the width of the solution column */
+}
+
+.results th.col-md-5,
+.results td.col-md-5 {
+    width: 75%; /* Adjust the width of the last column */
+}
+
+.my-container {
+    margin-left: 160px; /* Default margin for larger screens */
+}
+
+@media (max-width: 768px) {
+    .my-container {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+    }
+    .results th.col-md-4,
+    .results td.col-md-4 {
+        width: 30%; /* Adjust the width of the image column for smaller screens */
+    }
+
+    .results th.col-md-3,
+    .results td.col-md-3 {
+        width: 15%; /* Adjust the width of the disease column for smaller screens */
+    }
+
+    .results th.col-md-5,
+    .results td.col-md-5 {
+        width: 50%; /* Adjust the width of the solution column for smaller screens */
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .my-container {
+        margin-left: 50px; /* Adjusted margin left for smaller screens */
+    }
+    .results th.col-md-4,
+    .results td.col-md-4 {
+        width: 20%; /* Adjust the width of the image column for smaller screens */
+    }
+
+    .results th.col-md-3,
+    .results td.col-md-3 {
+        width: 15%; /* Adjust the width of the disease column for smaller screens */
+    }
+
+    .results th.col-md-5,
+    .results td.col-md-5 {
+        width: 65%; /* Adjust the width of the solution column for smaller screens */
+    }
+}

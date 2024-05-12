@@ -1,0 +1,22 @@
+.results tr[visible="false"],
+.no-result {
+  display: none;
+}
+
+.results tr[visible="true"] {
+  display: table-row;
+}
+
+.counter {
+  padding: 8px;
+  color: #ccc;
+}
+
+.custom-table-row:nth-child(even) {
+  background-color: grey !important;
+}
+
+.custom-table-row:nth-child(odd) {
+  background-color: white !important;
+}
+

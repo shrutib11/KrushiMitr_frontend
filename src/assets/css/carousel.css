@@ -1,0 +1,71 @@
+.carousel .carousel-indicators button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.carousel .carousel-control-next-icon.changed {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/11488/11488622.png");
+}
+
+.carousel .carousel-control-prev-icon.changed {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/11488/11488614.png");
+}
+
+.carousel-item {
+  position: relative;
+  display: flex; /* Ensure the images are displayed in a flex container */
+  justify-content: center; /* Center the images horizontally */
+}
+
+.carousel-item img {
+  width: 100%; /* Ensure the images take up the full width of the Carousel */
+  height: 50%; /* Maintain the aspect ratio of the images */
+}
+
+.carousel-caption {
+  position: absolute;
+  text-align: center;
+}
+
+.carousel-caption h4,
+.carousel-caption p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.carousel-caption .title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-caption .subtitle {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+@media (max-width: 767.98px) {
+  .carousel-caption .title-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .carousel-caption .title {
+    font-size: 1.5rem; /* Adjust the font size for mobile screens */
+  }
+
+  .carousel-caption .subtitle {
+    font-size: 0.8rem; /* Adjust the font size for mobile screens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .carousel-caption .title {
+    font-size: 1.8rem; /* Adjust the font size for tablet screens */
+  }
+
+  .carousel-caption .subtitle {
+    font-size: 0.9rem; /* Adjust the font size for tablet screens */
+  }
+}

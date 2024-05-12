@@ -1,0 +1,25 @@
+.MapContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 340px;
+}
+
+@media (max-width: 767.98px) {
+  .MapScroller {
+    max-width: auto;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+  .MapContainer {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  .MapContainer img {
+    height: 100%;
+    width: 170%; 
+    max-width: 200%;
+  }
+}
