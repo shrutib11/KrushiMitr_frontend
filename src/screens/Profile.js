@@ -94,7 +94,7 @@ const fetchpersonalinfo = async () => {
         return null;
     }
     else {
-        const response = await fetch(`${BACKEND_URL}api/profile/info?user_id=` + id);
+        const response = await fetch('https://krushi-mitr-backend1.vercel.app/api/profile/info?user_id=' + id);
         // console.log("Hi");
         // console.log(response);
         if (!response.ok) {
