@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import AllQuestions from '../components/Questions/AllQuestions';
 import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet';
-const BACKEND_URL = process.env.BACKEND_URL
+// const BACKEND_URL = process.env.BACKEND_URL
 
 export default function Question() {
     const navigate = useNavigate();
@@ -29,8 +29,8 @@ export default function Question() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`${BACKEND_URL}/api/display-all-questions`);
-                const jsonData = await response.    json();
+                const response = await fetch('/api/display-all-questions');
+                const jsonData = await response.json();
                 setData(jsonData);
                 setisLoading(false);
             } catch (error) {
