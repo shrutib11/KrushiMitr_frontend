@@ -29,7 +29,7 @@ export default function Question() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`${BACKEND_URL}api/display-all-questions`);
+                const response = await fetch(`${BACKEND_URL}/display-all-questions`);
                 const jsonData = await response.json();
                 setData(jsonData);
                 setisLoading(false);
