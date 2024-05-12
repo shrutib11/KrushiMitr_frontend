@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 import img from '../assets/images/slider/jacques-barbary-4421377.jpg'
 import NotFound from '../components/NotFound';
 import Sidebar from '../components/Profiles/Sidebar.js'
+const BACKEND_URL = process.env.BACKEND_URL
 
 const Profile = () => {
     const token = localStorage.getItem("authToken");
@@ -93,7 +94,7 @@ const fetchpersonalinfo = async () => {
         return null;
     }
     else {
-        const response = await fetch('/api/profile/info?user_id=' + id);
+        const response = await fetch(`${BACKEND_URL}api/profile/info?user_id=` + id);
         // console.log("Hi");
         // console.log(response);
         if (!response.ok) {
