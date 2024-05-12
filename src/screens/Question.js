@@ -28,7 +28,7 @@ export default function Question() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/api/display-all-questions');
+                const response = await fetch('https://krushi-mitr-backend.vercel.app/api/display-all-questions');
                 const jsonData = await response.json();
                 setData(jsonData);
                 setisLoading(false);
